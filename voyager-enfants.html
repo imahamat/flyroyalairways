@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="ThemesLay">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!--title tag for page -->
+    <title> Voyager avec des enfants </title>
+</head>
+
+<body>
+    <!-- preloader area -->
+    <div class="preloader">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="load-spinner">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pagewrap modify-search">
+        <div class="head-wrapper">
+            <!-- page header section -->
+            <header class="header header-light">
+                <div class="container">
+                    <div class="sideMenu">
+                        <button type="button" class="btn rounded-0 btn-left toggle-slide-right"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop"
+                            aria-controls="offcanvasWithBackdrop">
+                            <i class="bi bi-text-center"></i>
+                        </button>
+                        <div class="offcanvas offcanvas-start theme-bg-secondary border-0" tabindex="-1"
+                            id="offcanvasWithBackdrop">
+                            <div class="p-0">
+                                <span class="p-0" id="offcanvasLabel"></span>
+                                <button type="button" class="btn-close custom-btn-close theme-text-white"
+                                    data-bs-dismiss="offcanvas" aria-label="Close">
+                                    <i class="bi bi bi-x-lg"></i>
+                                </button>
+                            </div>
+                            <!-- left side menu section -->
+                            <div class="offcanvas-body p-0 mt-5">
+                                <ul class="menuList nav flex-column w-100">
+                                    <li class="nav-item"><a href="index.html" class="position-relative card-effect">
+                                            <div class="card-box"></div>
+                                            <i class="bi bi-house-fill ps-4 pe-2"></i>Accueil
+                                        </a>
+                                    </li>
+                                   <!-- <li class="nav-item"><a href="deals-offers.html"
+                                            class="position-relative card-effect">
+                                            <div class="card-box"></div>
+                                            <i class="bi bi-chat-square-heart-fill ps-4 pe-2"></i>Offres spéciales
+                                        </a>
+                                    </li> -->
+                                    <li class="nav-item"><a href="#travelDeals" class="position-relative card-effect">
+                                            <div class="card-box"></div>
+                                            <i class="bi bi-bookmark-check-fill ps-4 pe-2"></i>Offres de voyage
+                                        </a>
+                                    </li>
+                                    <li class="nav-item"><a href="#featuredFlights"
+                                            class="position-relative card-effect">
+                                            <div class="card-box"></div>
+                                            <i class="bi bi-bell-fill ps-4 pe-2"></i>Vols en vedette
+                                        </a>
+                                    </li>
+                                    <li class="nav-item"><a href="#howWork" class="position-relative card-effect">
+                                            <div class="card-box"></div>
+                                            <i class="bi bi-shield-fill-exclamation ps-4 pe-2"></i>Comment ça marche
+                                        </a>
+                                    </li>
+                                    <!-- <li class="nav-item"><a href="#ourDestinations" class="position-relative card-effect"> -->
+                                    <li class="nav-item"> <a href="#Recommendations" class="position-relative card-effect">
+                                        <div class="card-box"></div>
+                                        <i class="bi bi-map-fill ps-4 pe-2"></i> Nos destinations
+                                        </a>
+                                    </li>
+
+                                    <!-- Informations Section -->
+                                    <li class="nav-item">
+
+                                        <a href="#" class="position-relative card-effect collapsed" data-bs-toggle="collapse" data-bs-target="#informationSubMenu">
+                                            <div class="card-box"></div>
+                                            <i class="bi bi-info-circle-fill ps-4 pe-2"></i>Informations
+                                        </a>
+                                        <ul id="informationSubMenu" class="collapse nav flex-column ms-4">
+                                            <!-- Bagages -->
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#bagagesSubMenu">
+                                                    <div class="card-box"></div>
+                                                    <i class="bi bi-suitcase-fill ps-4 pe-2"></i>Bagages
+                                                </a>
+                                                <ul id="bagagesSubMenu" class="collapse nav flex-column ms-4">
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link">
+                                                            <i class="bi bi-briefcase-fill ps-4 pe-2"></i> Franchise de bagages
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link">
+                                                            <i class="bi bi-handbag-fill ps-4 pe-2"></i>Les bagages à main
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link">
+                                                            <i class="bi bi-bag-plus-fill ps-4 pe-2"></i>Excédent de bagages
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link">
+                                                            <i class="bi bi-bag-x-fill ps-4 pe-2"></i>Bagages perdus/endommagés
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="articles-interdits.html" class="nav-link">
+                                                            <i class="bi bi-exclamation-triangle-fill ps-4 pe-2"></i>Articles interdits
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>    
+                                            <!-- Besoins Spéciaux -->
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#besoinsSubMenu">
+                                                    <div class="card-box"></div>
+                                                    <i class="bi bi-heart-fill ps-4 pe-2"></i>Besoins Spéciaux
+                                                </a>
+                                                <ul id="besoinsSubMenu" class="collapse nav flex-column ms-4">
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link">
+                                                            <i class="bi bi-body-text ps-4 pe-2"></i>Mobilité réduite
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link">
+                                                            <i class="bi bi-person-fill ps-4 pe-2"></i>Voyager enceinte
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link">
+                                                            <i class="bi bi-puzzle-fill ps-4 pe-2"></i>Animaux domestiques
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>                                            
+                                            <!-- Voyager Sainements -->
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#voyagerSubMenu">
+                                                    <div class="card-box"></div>
+                                                    <i class="bi bi-heart-pulse-fill ps-4 pe-2"></i>Voyager Sainement
+                                                </a>
+                                                <ul id="voyagerSubMenu" class="collapse nav flex-column ms-4">
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link">
+                                                            <i class="bi bi-emoji-smile-fill ps-4 pe-2"></i>Voyager avec des enfants
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="marchandises-dangereuses.html" class="nav-link">
+                                                            <i class="bi bi-exclamation-triangle-fill ps-4 pe-2"></i>Marchandises dangereuses
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <!-- Services Section -->
+                                    <li class="nav-item">
+                                        <a href="#" class="position-relative card-effect collapsed" data-bs-toggle="collapse" data-bs-target="#servicesSubMenu">
+                                            <div class="card-box"></div>
+                                            <i class="bi bi-briefcase-fill ps-4 pe-2"></i>Services
+                                        </a>
+                                        <ul id="servicesSubMenu" class="collapse nav flex-column ms-4">
+                                            <!-- En Vol -->
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#envolsSubMenu">
+                                                    <div class="card-box"></div>
+                                                    <i class="bi bi-airplane-engines-fill ps-4 pe-2"></i>En Vol
+                                                                                                </a>
+                                                <ul id="envolsSubMenu" class="collapse nav flex-column ms-4">
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link">
+                                                            <i class="bi bi-grid-fill ps-4 pe-2"></i> Plan des cabines
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link">
+                                                            <!-- <i class="bi bi-handbag-fill ps-4 pe-2"></i> Classe Affaires -->
+                                                            <i class="bi bi-briefcase-fill ps-4 pe-2"></i> Classe Affaires
+
+                                                            <!-- <i class="bi bi-lounge-fill ps-4 pe-2"></i> Classe Affaires -->
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link">
+                                                            <i class="bi bi-person-fill-check ps-4 pe-2"></i> Classe Économique
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link">
+                                                            <!-- <i class="bi bi-bag-x-fill ps-4 pe-2"></i> Repas  -->
+                                                            <i class="bi bi-cup-hot-fill ps-4 pe-2"></i> Repas
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>  
+                                            <!-- Aéroport -->
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#aeroportSubMenu">
+                                                    <div class="card-box"></div>
+                                                    <i class="bi bi-building-fill-check ps-4 pe-2"></i> À l'Aéroport
+                                                </a>
+                                                <ul id="aeroportSubMenu" class="collapse nav flex-column ms-4">
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link">
+                                                            <i class="bi bi-house-door-fill ps-4 pe-2"></i> Terminal de destination
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <!-- <a href="service-arrivee.html" class="nav-link"> -->
+                                                         <a href="#" class="nav-link">
+                                                            <i class="bi bi-emoji-smile-fill ps-4 pe-2"></i> Service d'arrivée
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <!-- <a href="salons.html" class="nav-link"> -->
+                                                        <a href="#" class="nav-link">
+                                                            <i class="bi bi-cup-straw ps-4 pe-2"></i> Les salons
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="escales.html" class="nav-link">
+
+                                                            <i class="bi bi-stopwatch-fill ps-4 pe-2"></i> Escales
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="aeroport-ndjamena.html" class="nav-link">
+                                                            <i class="bi bi-building-fill ps-4 pe-2"></i> Aéroport de N'djamena
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>   
+                                        </ul>
+                                    </li>
+
+                                    <!-- À Propos de Section -->
+                                    <li class="nav-item">
+                                        <a href="#" class="position-relative card-effect collapsed" data-bs-toggle="collapse" data-bs-target="#aboutSubMenu">
+                                            <div class="card-box"></div>
+                                            <i class="bi bi-info-circle-fill ps-4 pe-2"></i>À propos de
+                                        </a>
+                                        <ul id="aboutSubMenu" class="collapse nav flex-column ms-4">
+ 
+                                            <li class="nav-item">
+                                                <a href="about.html" class="nav-link">
+                                                    <i class="bi bi-bullseye ps-4 pe-2"></i> Nous
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="nos-bureaux.html" class="nav-link">
+                                                    <i class="bi bi-geo-alt-fill ps-4 pe-2"></i> Nos bureaux
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link">
+                                                    <!-- <a href="notre-equipe.html" class="nav-link"> -->
+
+                                                    <i class="bi bi-people-fill ps-4 pe-2"></i> Notre équipe
+                                                </a>
+                                            </li>    
+                                        </ul>
+                                    </li>
+                                    
+
+                                     <!-- Notre flotte Section -->
+                                    <li class="nav-item"><a href="#ourFleet" class="position-relative card-effect">
+                                        <div class="card-box"></div>
+                                        <i class="bi bi-airplane-fill ps-4 pe-2"></i>Notre flotte
+                                    </a>
+                                    </li>
+                                     <!-- Contact Section -->
+                                    <li class="nav-item"><a href="contact.html" class="position-relative card-effect">
+                                            <div class="card-box"></div>
+                                            <i class="bi bi-arrows-move ps-4 pe-2"></i>Contacter Nous
+                                        </a>
+                                    </li>
+                                     <!-- Blog  Section -->
+                                    <li class="nav-item"><a href="blog.html" class="position-relative card-effect">
+                                            <div class="card-box"></div>
+                                            <i class="bi bi-arrow-right-circle-fill ps-4 pe-2"></i>Blogs
+                                        </a>
+                                    </li>
+                                </ul>
+                                 <!-- Phone Section -->
+                                <div class="mt-5">
+                                    <p class="d-inline-flex theme-text-white">
+                                        <i class="bi bi-telephone-fill h4 theme-text-white ps-4 pe-2"></i>
+                                        24×7 Service Client <br> +235 64-00-00-61
+                                    </p>
+                                </div>
+                                <!-- Email Section -->
+                                <div class="mt-3">
+                                    <p class="d-inline-flex theme-text-white">
+                                        <i class="bi bi-envelope-fill h4 theme-text-white ps-4 pe-2"></i>
+                                        Envoyez-nous un email <br> info@flyroyalairways.com
+                                    </p>
+                                </div>
+                                <!-- Social Media Section -->
+                                <p class="ps-4 mb-0 mt-5 theme-text-white">Réseaux sociaux</p>
+                                <div class="d-flex social mt-3 ps-4">
+                                    <a href="#" class="h4 pe-3"><i class="bi bi-facebook"></i></a>
+                                    <a href="https://twitter.com/flyroyalairways" class="h4 px-3"><i class="bi bi-twitter"></i></a>
+                                    <a href="https://www.linkedin.com/company/royalairways" class="h4 px-3"><i class="bi bi-linkedin"></i></a>
+                                    <a href="https://www.instagram.com/flyroyalairways" class="h4 px-3"><i class="bi bi-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav class="navbar navbar-expand-md navbar-light py-0 px-0">
+                        <a class="navbar-brand ms-5" href="index-fluid.html"><img src="assets/images/logo.png"
+                                alt="Brand Logo" title="Brand Logo" class="img-fluid"></a>
+                        <button class="navbar-toggler px-1 btn rounded-0" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <div class="dropdown-container pe-md-4">
+                                        <div class="dropdown-toggle click-dropdown">
+                                            <i class="bi bi-currency-exchange"></i> Devise
+                                        </div>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li class="nav-item"><a class="dropdown-item" href="#"><span
+                                                            class="flag-td"></span>XAF</a></li>
+                                                <li class="nav-item"><a class="dropdown-item" href="#"><span
+                                                            class="flag us"></span>USD</a></li>
+                                                <li class="nav-item"><a class="dropdown-item" href="#"><span
+                                                            class="flag fr"></span>EUR</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="dropdown-container pe-md-4">
+                                        <div class="dropdown-toggle click-dropdown">
+                                            <i class="bi bi-translate"></i> Langue
+                                        </div>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                
+                                                <li class="nav-item"><a class="dropdown-item" href="#"><span
+                                                    class="flag fr"></span>Français</a></li>
+                                                <li class="nav-item"><a class="dropdown-item" href="#"><span
+                                                            class="flag-td"></span>Arabe</a></li>
+                                                <li class="nav-item"><a class="dropdown-item" href="#"><span
+                                                            class="flag us"></span>Anglais</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="dropdown-container">
+                                        <div class="dropdown-toggle click-dropdown">
+                                            <i class="bi bi-person-circle"></i> Compte
+                                        </div>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li class="nav-item"><a class="dropdown-item"
+                                                        href="signin.html">Connexion</a></li>
+                                                <li class="nav-item"><a class="dropdown-item"
+                                                        href="signup.html">Inscription</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <!-- review booking flight-->
+            <div class="flight-search">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-12">
+                            <span class="fw-bold theme-text-white">Voyager avec des enfants</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- body section -->
+        <div class="content-section">
+            <!-- flight result page - oneway start -->
+            <section class="theme-bg-white py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="mb-3 theme-text-accent-two font-medium lh-lg">
+                                <strong>I. Général</strong>
+                            </p>
+                            <p class="mb-3 theme-text-accent-two font-medium lh-lg">
+                                Royal Airways considère les enfants âgés de 5 à 11 ans inclus voyageant seuls sur Royal Airways ou sur d'autres compagnies aériennes comme des mineurs non accompagnés, nécessitant un service d'escorte obligatoire. Royal Airways considère également les jeunes de 12 à 17 ans comme des mineurs non accompagnés, mais ils peuvent être acceptés sans escorte moyennant le paiement des frais de service applicables.
+                            </p>
+                            <p class="mb-3 theme-text-accent-two font-medium lh-lg">
+                                Royal Airways n'assume aucune responsabilité pour les mineurs non accompagnés au-delà de l'aéroport où ils embarquent ou débarquent. Cependant, Royal Airways garantit la remise en toute sécurité du mineur non accompagné au transporteur récepteur au point de transfert.
+                            </p>
+                            
+                            <p class="mb-3 theme-text-accent-two font-medium lh-lg">
+                                <strong>II. Politique</strong>
+                            </p>
+                            <p class="mb-3 theme-text-accent-two font-medium lh-lg">
+                                Les mineurs non accompagnés de moins de cinq (5) ans ne sont pas acceptés sur les vols Royal Airways sans un membre de la famille accompagnateur.
+                            </p>
+                            <p class="mb-3 theme-text-accent-two font-medium lh-lg">
+                                Une escorte fournie par Royal Airways (membre de l'équipage de cabine) est obligatoire pour les mineurs non accompagnés âgés de 5 à 11 ans inclus sur les vols nationaux et internationaux.
+                            </p>
+                            <p class="mb-3 theme-text-accent-two font-medium lh-lg">
+                                Une escorte peut être fournie par Royal Airways, moyennant des frais applicables, sur les trajets nationaux et internationaux.
+                            </p>
+                            
+                            <p class="mb-3 theme-text-accent-two font-medium lh-lg">
+                                <strong>III. Procédures</strong>
+                            </p>
+                            <p class="mb-3 theme-text-accent-two font-medium lh-lg">
+                                Avant l'émission du billet, le client doit remplir un formulaire de mineur non accompagné avec les adresses complètes et les numéros de téléphone de toutes les personnes responsables à l'origine, au point de transfert (si applicable) et à la destination.
+                            </p>
+                            <p class="mb-3 theme-text-accent-two font-medium lh-lg">
+                                Dans le cas où un parent ou tuteur ne peut pas organiser la réception de l'enfant au point de transfert et si aucun service d'escorte n'est demandé, Royal Airways aidera à organiser une tutelle appropriée sans accepter de responsabilité. Cette tutelle est réservée aux enfants de 12 ans et plus.
+                            </p>
+                            
+                            <p class="mb-3 theme-text-accent-two font-medium lh-lg">
+                                <strong>IV. Tarifs pour Mineurs Non Accompagnés et Escortes de la Compagnie</strong>
+                            </p>
+                            <p class="mb-3 theme-text-accent-two font-medium lh-lg">
+                                <strong>International</strong>
+                            </p>
+                            <p class="mb-3 theme-text-accent-two font-medium lh-lg">
+                                Les tarifs suivants s'appliquent pour le transport des mineurs non accompagnés sur les trajets internationaux.
+                            </p>
+                            
+                            <p class="mb-3 theme-text-accent-two font-medium lh-lg">
+                                <strong>VOL NON PARTAGÉ</strong>
+                            </p>
+                            <table class="table mb-4">
+                                <thead>
+                                    <tr>
+                                        <th>Groupe d'âge (années)</th>
+                                        <th>Tarif Applicable</th>
+                                        <th>Frais de Service</th>
+                                        <th>Escorte de la Compagnie</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>5 à 11 ans</td>
+                                        <td>Tarif adulte</td>
+                                        <td>Obligatoire à 50 USD par secteur</td>
+                                        <td>Obligatoire</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12 à 17 ans</td>
+                                        <td>Tarif adulte</td>
+                                        <td>Optionnel à 50 USD</td>
+                                        <td>Optionnel</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                            <p class="mb-3 theme-text-accent-two font-medium lh-lg">
+                                <em>Note :</em> Pour le groupe d'âge de 5 à 11 ans, si une escorte est demandée, les frais applicables seront le tarif enfant + le tarif adulte aller simple pour l'escorte + frais de service.
+                            </p>
+                            <p class="mb-3 theme-text-accent-two font-medium lh-lg">
+                                Les jeunes de 12 à 17 ans paieront 50 USD aller simple si une attention particulière est requise.
+                            </p>
+                            
+                            <p class="mb-3 theme-text-accent-two font-medium lh-lg">
+                                <strong>VOL PARTAGÉ (Code Share)</strong>
+                            </p>
+                            <table class="table mb-4">
+                                <thead>
+                                    <tr>
+                                        <th>Groupe d'âge (années)</th>
+                                        <th>Tarif Applicable</th>
+                                        <th>Exigence d'Escorte</th>
+                                        <th>Tarif d'Escorte</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>5 à 11 ans</td>
+                                        <td>Tarif adulte + frais de service de 50 USD</td>
+                                        <td>Obligatoire</td>
+                                        <td>Tarif adulte aller simple</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12 à 17 ans</td>
+                                        <td>Tarif adulte + frais de service de 50 USD</td>
+                                        <td>Optionnel</td>
+                                        <td>Optionnel</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                            <p class="mb-3 theme-text-accent-two font-medium lh-lg">
+                                <em>Note :</em> Des frais supplémentaires applicables doivent être perçus pour les vols en partage de code et pour les correspondances intercompagnies.
+                            </p>
+                            
+                            <p class="mb-3 theme-text-accent-two font-medium lh-lg">
+                                <strong>National</strong>
+                            </p>
+                            <p class="mb-3 theme-text-accent-two font-medium lh-lg">
+                                Les mineurs non accompagnés âgés de 5 à 11 ans inclus seront acceptés pour le transport sur les trajets nationaux avec une escorte de la compagnie en payant un aller simple au tarif adulte pour l'escorte et des frais de service de 50 USD. Les mineurs non accompagnés de 12 à 18 ans peuvent voyager sans escorte en remplissant un formulaire UM et en payant des frais de service de 50 USD. (Pour plus d'informations, veuillez contacter votre agence de voyage ou le bureau de vente et de billetterie de Royal Airways.)
+                            </p>
+                            
+                            <p class="mb-3 theme-text-accent-two font-medium lh-lg">
+                                <strong>Avertissement</strong>
+                            </p>
+                            <p class="mb-3 theme-text-accent-two font-medium lh-lg">
+                                Ces pages sont fournies à titre informatif uniquement et ne constituent pas un contrat. En tant que tel, toute information contenue dans ce site est susceptible de changer avec ou sans préavis. Royal Airways décline toute responsabilité pour ces changements. Royal Airways se réserve également le droit d'interpréter et d'appliquer ces politiques et procédures. Dans chaque cas, les interprétations et applications de Royal Airways seront finales et concluantes.
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+        <!-- page footer section -->
+        <footer class="footer" id="footerSec">
+            <div class="container-fluid" data-aos="fade-up">
+                <div class="row">
+                    <div class="col-12 col-lg-6 pt-5">
+                        <img src="assets/images/logoWhite.png" class="img-fluid" alt="Brand color white"
+                            title="Brand color white">
+                        <p class="text-justify pt-5">Unir les peuples africains </p>
+                        <p class="pt-lg-5">Obtenez les dernières offres, les prochaines promotions de vols et des tarifs avantageux</p>
+                        <form class="form">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control py-3 rounded-0" id="inputPassword2"
+                                            placeholder="info@flyroyalairways.com">
+                                        <button type="button"
+                                            class="btn btn-outline-light rounded-0 custom-btn-subscribe btn-effect">S'abonner</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="col-12 mt-5">
+                            <!-- <img src="assets/images/icons/tafi.svg" class="img-fluid me-4" alt="tafi" title="tafi">
+                            <img src="assets/images/icons/taai.svg" class="img-fluid" alt="taai" title="taai">
+                             -->
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 pt-5">
+                        <!-- <img src="assets/images/icons/iata.svg" class="img-fluid d-inline-flex" alt="IATA" title="IATA">
+                        <p class="fw-bold text-uppercase mb-0 ms-2 d-inline-flex">Nous sommes une compagnie aérienne certifiée IATA
+                        </p> -->
+                        <div class="row">
+                            <div class="col-md-4 mt-5">
+                                <p class="text-uppercase fw-bold mb-4">À propos de nous</p>
+                                <ul class="fl-menu">
+                                    <li class="nav-item"><a href="about.html">À propos de nous</a></li>
+                                    <li class="nav-item"><a href="contact.html">Contacter Nous</a></li>
+                                    <li class="nav-item"><a href="#">Détails bancaires</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 mt-5">
+                                <p class="text-uppercase fw-bold">Légal</p>
+                                <ul class="fl-menu">
+                                    <li class="nav-item"><a href="privacy.html">Confidentialité</a></li>
+                                    <li class="nav-item"><a href="#">Conditions Générales</a></li>
+                                    <li class="nav-item"><a href="#">Avertissement</a></li>
+                                    <li class="nav-item"><a href="#">Confidentialité et Cookies</a></li>
+                                    <li class="nav-item"><a href="#">Légal</a></li>
+                                    <li class="nav-item"><a href="#">Aide</a></li>
+                                    <li class="nav-item"><a href="#">Feedback</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 mt-5">
+                                <p class="text-uppercase fw-bold">Entreprise</p>
+                                <ul class="fl-menu">
+                                    <li class="nav-item"><a href="#">Devenez partenaire</a></li>
+                                    <li class="nav-item"><a href="#">Services</a></li>
+                                    <li class="nav-item"><a href="#">Carrières</a></li>
+                                    <li class="nav-item"><a href="faq.html">FAQ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-0 pt-5">
+                    <div class="col-12 border-top border-bottom">
+                        <div class="row">
+                            <div class="col-12 col-lg-4 text-start py-3">
+                                <p class="d-inline-flex text-uppercase mb-0">Suivez-nous</p>
+                                <div class="d-inline-flex social">
+                                    <a href="#" class="ps-3"><i class="bi bi-facebook"></i></a>
+                                    <a href="https://twitter.com/flyroyalairways" class="ps-3"><i class="bi bi-twitter"></i></a>
+                                    <a href="https://www.linkedin.com/company/royalairways" class="ps-3"><i class="bi bi-linkedin"></i></a>
+                                    <a href="https://www.instagram.com/flyroyalairways" class="ps-3"><i class="bi bi-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 text-lg-center social py-3">
+                                <p class="d-inline-flex text-uppercase mb-0">Centre de support :</p>
+                                <a href="#" class="botom-link">(+235) 64-00-00-61</a>
+                            </div>
+                            <div class="col-12 col-lg-4 text-lg-end social py-3">
+                                <a href="mailto:info@flyroyalairways.com" class="botom-link">info@flyroyalairways.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <p class="text-center py-5 mb-0 font-small">©2024 Royal Airways. Tous droits réservés.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <p id="back-top" class="back-to-top bg-dark" style="display: block;">
+                <a href="#top"><i class="bi bi-chevron-up"></i></a>
+            </p>
+        </footer>
+
+    </div>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--This page JavaScript -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!--Data Calendar js -->
+    <script src="assets/js/jquery-ui.js"></script>
+    <!--Traveler counter js -->
+    <script src="assets/js/counter.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- animation aos library -->
+    <script src="assets/js/aos.js"></script>
+</body>
+
+</html>

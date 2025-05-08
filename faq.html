@@ -1,0 +1,810 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="ThemesLay">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!--title tag for page -->
+    <title> FAQ</title>
+</head>
+
+<body>
+    <!-- preloader area -->
+    <div class="preloader">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="load-spinner">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pagewrap modify-search">
+        <div class="head-wrapper">
+            <!-- page header section -->
+            <header class="header header-light">
+                <div class="container">
+                    <div class="sideMenu">
+                        <button type="button" class="btn rounded-0 btn-left toggle-slide-right"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop"
+                            aria-controls="offcanvasWithBackdrop">
+                            <i class="bi bi-text-center"></i>
+                        </button>
+                        <div class="offcanvas offcanvas-start theme-bg-secondary border-0" tabindex="-1"
+                            id="offcanvasWithBackdrop">
+                            <div class="p-0">
+                                <span class="p-0" id="offcanvasLabel"></span>
+                                <button type="button" class="btn-close custom-btn-close theme-text-white"
+                                    data-bs-dismiss="offcanvas" aria-label="Close">
+                                    <i class="bi bi bi-x-lg"></i>
+                                </button>
+                            </div>
+                            <!-- left side menu section -->
+                            <div class="offcanvas-body p-0 mt-5">
+                                <ul class="menuList nav flex-column w-100">
+                                    <li class="nav-item"><a href="/" class="position-relative card-effect">
+                                            <div class="card-box"></div>
+                                            <i class="bi bi-house-fill ps-4 pe-2"></i>Accueil
+                                        </a>
+                                    </li>
+                                   <!-- <li class="nav-item"><a href="deals-offers.html"
+                                            class="position-relative card-effect">
+                                            <div class="card-box"></div>
+                                            <i class="bi bi-chat-square-heart-fill ps-4 pe-2"></i>Offres spéciales
+                                        </a>
+                                    </li> -->
+                                    <li class="nav-item"><a href="#travelDeals" class="position-relative card-effect">
+                                            <div class="card-box"></div>
+                                            <i class="bi bi-bookmark-check-fill ps-4 pe-2"></i>Offres de voyage
+                                        </a>
+                                    </li>
+                                    <li class="nav-item"><a href="#featuredFlights"
+                                            class="position-relative card-effect">
+                                            <div class="card-box"></div>
+                                            <i class="bi bi-bell-fill ps-4 pe-2"></i>Vols en vedette
+                                        </a>
+                                    </li>
+                                    <li class="nav-item"><a href="#howWork" class="position-relative card-effect">
+                                            <div class="card-box"></div>
+                                            <i class="bi bi-shield-fill-exclamation ps-4 pe-2"></i>Comment ça marche
+                                        </a>
+                                    </li>
+                                    <!-- <li class="nav-item"><a href="#ourDestinations" class="position-relative card-effect"> -->
+                                    <li class="nav-item"> <a href="#Recommendations" class="position-relative card-effect">
+                                        <div class="card-box"></div>
+                                        <i class="bi bi-map-fill ps-4 pe-2"></i> Nos destinations
+                                        </a>
+                                    </li>
+
+                                    <!-- Informations Section -->
+                                    <li class="nav-item">
+
+                                        <a href="#" class="position-relative card-effect collapsed" data-bs-toggle="collapse" data-bs-target="#informationSubMenu">
+                                            <div class="card-box"></div>
+                                            <i class="bi bi-info-circle-fill ps-4 pe-2"></i>Informations
+                                        </a>
+                                        <ul id="informationSubMenu" class="collapse nav flex-column ms-4">
+                                            <!-- Bagages -->
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#bagagesSubMenu">
+                                                    <div class="card-box"></div>
+                                                    <i class="bi bi-suitcase-fill ps-4 pe-2"></i>Bagages
+                                                </a>
+                                                <ul id="bagagesSubMenu" class="collapse nav flex-column ms-4">
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link">
+                                                            <i class="bi bi-briefcase-fill ps-4 pe-2"></i> Franchise de bagages
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link">
+                                                            <i class="bi bi-handbag-fill ps-4 pe-2"></i>Les bagages à main
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link">
+                                                            <i class="bi bi-bag-plus-fill ps-4 pe-2"></i>Excédent de bagages
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link">
+                                                            <i class="bi bi-bag-x-fill ps-4 pe-2"></i>Bagages perdus/endommagés
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="articles-interdits.html" class="nav-link">
+                                                            <i class="bi bi-exclamation-triangle-fill ps-4 pe-2"></i>Articles interdits
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>    
+                                            <!-- Besoins Spéciaux -->
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#besoinsSubMenu">
+                                                    <div class="card-box"></div>
+                                                    <i class="bi bi-heart-fill ps-4 pe-2"></i>Besoins Spéciaux
+                                                </a>
+                                                <ul id="besoinsSubMenu" class="collapse nav flex-column ms-4">
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link">
+                                                            <i class="bi bi-body-text ps-4 pe-2"></i>Mobilité réduite
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link">
+                                                            <i class="bi bi-person-fill ps-4 pe-2"></i>Voyager enceinte
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link">
+                                                            <i class="bi bi-puzzle-fill ps-4 pe-2"></i>Animaux domestiques
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>                                            
+                                            <!-- Voyager Sainements -->
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#voyagerSubMenu">
+                                                    <div class="card-box"></div>
+                                                    <i class="bi bi-heart-pulse-fill ps-4 pe-2"></i>Voyager Sainement
+                                                </a>
+                                                <ul id="voyagerSubMenu" class="collapse nav flex-column ms-4">
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link">
+                                                            <i class="bi bi-emoji-smile-fill ps-4 pe-2"></i>Voyager avec des enfants
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="marchandises-dangereuses.html" class="nav-link">
+                                                            <i class="bi bi-exclamation-triangle-fill ps-4 pe-2"></i>Marchandises dangereuses
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <!-- Services Section -->
+                                    <li class="nav-item">
+                                        <a href="#" class="position-relative card-effect collapsed" data-bs-toggle="collapse" data-bs-target="#servicesSubMenu">
+                                            <div class="card-box"></div>
+                                            <i class="bi bi-briefcase-fill ps-4 pe-2"></i>Services
+                                        </a>
+                                        <ul id="servicesSubMenu" class="collapse nav flex-column ms-4">
+                                            <!-- En Vol -->
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#envolsSubMenu">
+                                                    <div class="card-box"></div>
+                                                    <i class="bi bi-airplane-engines-fill ps-4 pe-2"></i>En Vol
+                                                                                                </a>
+                                                <ul id="envolsSubMenu" class="collapse nav flex-column ms-4">
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link">
+                                                            <i class="bi bi-grid-fill ps-4 pe-2"></i> Plan des cabines
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link">
+                                                            <!-- <i class="bi bi-handbag-fill ps-4 pe-2"></i> Classe Affaires -->
+                                                            <i class="bi bi-briefcase-fill ps-4 pe-2"></i> Classe Affaires
+
+                                                            <!-- <i class="bi bi-lounge-fill ps-4 pe-2"></i> Classe Affaires -->
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link">
+                                                            <i class="bi bi-person-fill-check ps-4 pe-2"></i> Classe Économique
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link">
+                                                            <!-- <i class="bi bi-bag-x-fill ps-4 pe-2"></i> Repas  -->
+                                                            <i class="bi bi-cup-hot-fill ps-4 pe-2"></i> Repas
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>  
+                                            <!-- Aéroport -->
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#aeroportSubMenu">
+                                                    <div class="card-box"></div>
+                                                    <i class="bi bi-building-fill-check ps-4 pe-2"></i> À l'Aéroport
+                                                </a>
+                                                <ul id="aeroportSubMenu" class="collapse nav flex-column ms-4">
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link">
+                                                            <i class="bi bi-house-door-fill ps-4 pe-2"></i> Terminal de destination
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <!-- <a href="service-arrivee.html" class="nav-link"> -->
+                                                         <a href="#" class="nav-link">
+                                                            <i class="bi bi-emoji-smile-fill ps-4 pe-2"></i> Service d'arrivée
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <!-- <a href="salons.html" class="nav-link"> -->
+                                                        <a href="#" class="nav-link">
+                                                            <i class="bi bi-cup-straw ps-4 pe-2"></i> Les salons
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="escales.html" class="nav-link">
+
+                                                            <i class="bi bi-stopwatch-fill ps-4 pe-2"></i> Escales
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="aeroport-ndjamena.html" class="nav-link">
+                                                            <i class="bi bi-building-fill ps-4 pe-2"></i> Aéroport de N'djamena
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>   
+                                        </ul>
+                                    </li>
+
+                                    <!-- À Propos de Section -->
+                                    <li class="nav-item">
+                                        <a href="#" class="position-relative card-effect collapsed" data-bs-toggle="collapse" data-bs-target="#aboutSubMenu">
+                                            <div class="card-box"></div>
+                                            <i class="bi bi-info-circle-fill ps-4 pe-2"></i>À propos de
+                                        </a>
+                                        <ul id="aboutSubMenu" class="collapse nav flex-column ms-4">
+ 
+                                            <li class="nav-item">
+                                                <a href="about.html" class="nav-link">
+                                                    <i class="bi bi-bullseye ps-4 pe-2"></i> Nous
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="nos-bureaux.html" class="nav-link">
+                                                    <i class="bi bi-geo-alt-fill ps-4 pe-2"></i> Nos bureaux
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link">
+                                                    <!-- <a href="notre-equipe.html" class="nav-link"> -->
+
+                                                    <i class="bi bi-people-fill ps-4 pe-2"></i> Notre équipe
+                                                </a>
+                                            </li>    
+                                        </ul>
+                                    </li>
+                                    
+
+                                     <!-- Notre flotte Section -->
+                                    <li class="nav-item"><a href="#ourFleet" class="position-relative card-effect">
+                                        <div class="card-box"></div>
+                                        <i class="bi bi-airplane-fill ps-4 pe-2"></i>Notre flotte
+                                    </a>
+                                    </li>
+                                     <!-- Contact Section -->
+                                    <li class="nav-item"><a href="contact.html" class="position-relative card-effect">
+                                            <div class="card-box"></div>
+                                            <i class="bi bi-arrows-move ps-4 pe-2"></i>Contacter Nous
+                                        </a>
+                                    </li>
+                                     <!-- Blog  Section -->
+                                    <li class="nav-item"><a href="blog.html" class="position-relative card-effect">
+                                            <div class="card-box"></div>
+                                            <i class="bi bi-arrow-right-circle-fill ps-4 pe-2"></i>Blogs
+                                        </a>
+                                    </li>
+                                </ul>
+                                 <!-- Phone Section -->
+                                <div class="mt-5">
+                                    <p class="d-inline-flex theme-text-white">
+                                        <i class="bi bi-telephone-fill h4 theme-text-white ps-4 pe-2"></i>
+                                        24×7 Service Client <br> +235 64-00-00-61
+                                    </p>
+                                </div>
+                                <!-- Email Section -->
+                                <div class="mt-3">
+                                    <p class="d-inline-flex theme-text-white">
+                                        <i class="bi bi-envelope-fill h4 theme-text-white ps-4 pe-2"></i>
+                                        Envoyez-nous un email <br> info@flyroyalairways.com
+                                    </p>
+                                </div>
+                                <!-- Social Media Section -->
+                                <p class="ps-4 mb-0 mt-5 theme-text-white">Réseaux sociaux</p>
+                                <div class="d-flex social mt-3 ps-4">
+                                    <a href="#" class="h4 pe-3"><i class="bi bi-facebook"></i></a>
+                                    <a href="https://twitter.com/flyroyalairways" class="h4 px-3"><i class="bi bi-twitter"></i></a>
+                                    <a href="https://www.linkedin.com/company/royalairways" class="h4 px-3"><i class="bi bi-linkedin"></i></a>
+                                    <a href="https://www.instagram.com/flyroyalairways" class="h4 px-3"><i class="bi bi-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav class="navbar navbar-expand-md navbar-light py-0 px-0">
+                        <a class="navbar-brand ms-5" href="/"><img src="assets/images/logo.png"
+                                alt="Brand Logo" title="Brand Logo" class="img-fluid"></a>
+                        <button class="navbar-toggler px-1 btn rounded-0" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <div class="dropdown-container pe-md-4">
+                                        <div class="dropdown-toggle click-dropdown">
+                                            <i class="bi bi-currency-exchange"></i> Devise
+                                        </div>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li class="nav-item"><a class="dropdown-item" href="#"><span
+                                                            class="flag-td"></span>XAF</a></li>
+                                                <li class="nav-item"><a class="dropdown-item" href="#"><span
+                                                            class="flag us"></span>USD</a></li>
+                                                <li class="nav-item"><a class="dropdown-item" href="#"><span
+                                                            class="flag fr"></span>EUR</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="dropdown-container pe-md-4">
+                                        <div class="dropdown-toggle click-dropdown">
+                                            <i class="bi bi-translate"></i> Langue
+                                        </div>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                
+                                                <li class="nav-item"><a class="dropdown-item" href="#"><span
+                                                    class="flag fr"></span>Français</a></li>
+                                                <li class="nav-item"><a class="dropdown-item" href="#"><span
+                                                            class="flag-td"></span>Arabe</a></li>
+                                                <li class="nav-item"><a class="dropdown-item" href="#"><span
+                                                            class="flag us"></span>Anglais</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="dropdown-container">
+                                        <div class="dropdown-toggle click-dropdown">
+                                            <i class="bi bi-person-circle"></i> Compte
+                                        </div>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li class="nav-item"><a class="dropdown-item"
+                                                        href="signin.html">Connexion</a></li>
+                                                <li class="nav-item"><a class="dropdown-item"
+                                                        href="signup.html">Inscription</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <!-- review booking flight-->
+            <div class="flight-search">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-12">
+                            <span class="fw-bold theme-text-white">FAQ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- body section -->
+        <div class="inner-banner faq-page-bg"></div>
+        <div class="content-section">
+            <!-- flight result page - oneway start -->
+            <section class="theme-bg-white py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="fs-2 mb-3">Questions Fréquemment Posées
+                            </h2>
+                            <p class="mb-3 theme-text-accent-two font-medium lh-lg">Nous avons compilé les réponses aux questions les plus courantes que nous recevons pour vous aider à trouver rapidement les informations dont vous avez besoin. Que vous ayez des questions sur la réservation de vols, les politiques de bagages, ou nos services, vous trouverez ici des réponses claires et utiles. Si vous ne trouvez pas ce que vous cherchez, n'hésitez pas à contacter notre service client pour une assistance supplémentaire.</p>
+                        </div>
+                        <div class="col-12 mt-5">
+                            <!-- Order question -->
+                            <h3 class="mb-3">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28.64"
+                                        viewBox="0 0 30 28.64">
+                                        <g id="order" transform="translate(-42 -927.56)">
+                                            <path id="Path_18" data-name="Path 18"
+                                                d="M56.362,940.364v14.687c0,.383-.007.766-.007,1.149l-.59-.258-3.737-1.647L47.505,952.3l-3.9-1.723c-.536-.236-1.059-.495-1.6-.721V935.174c0-.382,0-.765.006-1.148.2.089.4.178.6.264,1.247.553,2.5,1.1,3.746,1.65q1.743.766,3.485,1.536c.345.153.69.3,1.038.456q1.957.861,3.919,1.727l1.564.689Z" />
+                                            <path id="Path_19" data-name="Path 19"
+                                                d="M57.648,940.351l.865-.383c1.184-.523,2.374-1.044,3.558-1.567.83-.367,1.663-.731,2.493-1.1v3.8a.644.644,0,0,0,.638.638.65.65,0,0,0,.638-.638v-4.356c.224-.109.486-.218.731-.323.192-.083.38-.169.568-.252q1.953-.861,3.907-1.72a.24.24,0,0,1,.028-.013c.31-.137.639-.274.926-.408v14.135c0,.571-.006,1.145,0,1.717-.412.182-.82.364-1.232.545l-3.737,1.647q-2.26,1-4.523,1.992L58.6,955.785c-.319.141-.642.275-.961.412V941.835c0-.495.01-.989.007-1.484Z" />
+                                            <path id="Path_20" data-name="Path 20"
+                                                d="M56.987,939.244c-.408-.179-.814-.358-1.222-.54l-3.737-1.647-4.523-1.991q-1.953-.861-3.909-1.723c-.2-.09-.4-.176-.6-.265l.006,0,.074-.028q1.872-.738,3.74-1.478l2.668-1.053c.482.2.967.4,1.449.6l3.741,1.538q2.255.928,4.509,1.854l3.913,1.609c.172.07.345.143.514.217-.37.163-.741.325-1.108.488L58.6,938.542c-.533.236-1.076.456-1.609.7Z" />
+                                            <path id="Path_21" data-name="Path 21"
+                                                d="M71,933.084c-.077.032-.154.067-.23.1l-3.737,1.647q-.9.4-1.8.791c-.476-.194-.948-.389-1.424-.584q-1.872-.77-3.74-1.538-2.254-.929-4.51-1.854l-3.913-1.609c-.15-.06-.3-.124-.45-.188.045-.019.09-.035.135-.054l3.922-1.548,1.283-.507c.156-.061.316-.119.472-.182.46.182.923.363,1.382.545q1.872.738,3.741,1.478l4.509,1.781,3.922,1.548C70.7,932.963,70.851,933.023,71,933.084Z" />
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span class="ms-3">Réservation</span>
+                            </h3>
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            <span class="fs-1 text-gred">Q1.</span> <span class="ms-5">Comment puis-je passer une commande ?</span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p class="mb-3 theme-text-accent-two font-medium lh-lg">Pour passer une commande, suivez ces étapes :</p> 
+
+                                            <ul class="privacy-list">
+                                                <li>  <strong> Visitez notre site web</strong> ou utilisez notre application mobile.</li>
+                                                <li><strong>Choisissez les produits ou services</strong> que vous souhaitez commander, tels que des billets d'avion, des services additionnels ou des produits en duty-free.
+                                                </li>
+                                                <li><strong>Ajoutez vos sélections au panier</strong> en suivant les instructions à l'écran.
+                                                </li>
+                                                <li><strong>Accédez à votre panier</strong> et vérifiez les détails de votre commande.
+                                                </li>
+                                                <li><strong>Procédez au paiement</strong> en entrant vos informations de paiement et en suivant les instructions pour finaliser votre achat.
+                                                </li>
+                                                <li><strong>Recevez une confirmation </strong>par e-mail ou sur notre site une fois votre commande complétée.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            <span class="fs-1 text-gred">Q2.</span> <span class="ms-5">J'ai passé une commande, que se passe-t-il ensuite ?
+
+                                            </span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p class="mb-3 theme-text-accent-two font-medium lh-lg">Après avoir passé votre commande, voici ce qui se passe généralement :
+                                            </p> 
+
+                                            <ul class="privacy-list">
+                                                <li><strong>Confirmation de commande </strong> : Vous recevrez un e-mail de confirmation avec les détails de votre commande, y compris un numéro de référence, les articles ou services commandés, et le montant total.
+                                                </li>
+                                                <li><strong>Traitement de la commande</strong> : Nous examinons et traitons votre commande. Si des informations supplémentaires sont nécessaires, nous vous contacterons.
+                                                </li>
+                                                <li><strong>Confirmation de paiement </strong> : Une fois le paiement validé, vous recevrez une confirmation supplémentaire que votre transaction a été réussie.
+                                                </li>
+                                                <li><strong>Préparation et expédition</strong> : Pour les commandes de produits, nous préparons votre commande et la faisons expédier. Pour les services, nous finalisons votre réservation ou programme.
+                                                </li>
+                                                <li><strong>Recevez une confirmation </strong>par e-mail ou sur notre site une fois votre commande complétée.
+                                                </li>
+                                                <li>  <strong> Suivi de la commande </strong> : Vous recevrez des mises à jour sur l’état de votre commande, y compris des informations de suivi si applicable. Vous pouvez également suivre votre commande en ligne via votre compte.</li>
+                                                <li><strong>Service après-vente</strong> :Si vous avez des questions ou des problèmes après avoir reçu votre commande, notre service client est disponible pour vous assister.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            <span class="fs-1 text-gred">Q3.</span> <span class="ms-5">Y a-t-il un montant minimum pour effectuer une réservation de vol ?</span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p class="mb-3 theme-text-accent-two font-medium lh-lg"> Non, il n'y a pas de montant minimum requis pour effectuer une réservation de vol avec Royal Airways. Vous pouvez réserver un vol quel que soit le prix du billet. Toutefois, des frais supplémentaires peuvent s'appliquer pour des services additionnels tels que les bagages enregistrés ou les sièges réservés. Assurez-vous de vérifier les détails lors de la réservation pour connaître le coût total de votre voyage. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                            </div>
+                            <!-- Payment question -->
+                            <h3 class="mb-3 mt-5">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25.47"
+                                        viewBox="0 0 30 25.47">
+                                        <g id="payment" transform="translate(-6.715 -61.28)">
+                                            <path id="Path_24" data-name="Path 24"
+                                                d="M26.227,77.2a4.092,4.092,0,0,1-4.087-4.087v-3.53A4.092,4.092,0,0,1,26.227,65.5h1.649c.038,0,.077,0,.116,0h6.966V63.633A2.3,2.3,0,0,0,32.6,61.28H9.069a2.355,2.355,0,0,0-2.354,2.353V84.4A2.355,2.355,0,0,0,9.069,86.75H32.6A2.305,2.305,0,0,0,34.958,84.4V77.2Z" />
+                                            <path id="Path_25" data-name="Path 25"
+                                                d="M35.987,67.229h-.005a.289.289,0,0,0-.029,0H27.992c-.013,0-.025,0-.037,0H26.227a2.355,2.355,0,0,0-2.354,2.353v3.53a2.355,2.355,0,0,0,2.354,2.354h9.76v-.005a.749.749,0,0,0,.728-.757V67.986A.75.75,0,0,0,35.987,67.229Zm-8.776,5.449a1.331,1.331,0,1,1,1.331-1.331A1.331,1.331,0,0,1,27.211,72.678Z" />
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span class="ms-3">Paiement</span>
+                            </h3>
+                            <div class="accordion mb-4" id="accordionExample3">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOneA">
+                                        <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOneA" aria-expanded="true"
+                                            aria-controls="collapseOneA">
+                                            <span class="fs-1 text-gred">Q1.</span> <span class="ms-5">Comment puis-je payer ?   </span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOneA" class="accordion-collapse collapse"
+                                        aria-labelledby="headingOneA" data-bs-parent="#accordionExample3">
+                                        <div class="accordion-body">
+                                            <p class="mb-3 theme-text-accent-two font-medium lh-lg">Vous pouvez régler votre réservation de plusieurs manières :
+                                            </p> 
+
+                                            <ul class="privacy-list">
+                                                <li><strong>Carte de crédit ou de débit  </strong> : Nous acceptons les principales cartes de crédit et de débit, telles que Visa, MasterCard et American Express. Vous pouvez entrer les informations de votre carte lors du processus de paiement en ligne.
+                                                </li>
+                                                <li><strong>Paiement en ligne</strong> : Vous pouvez utiliser des services de paiement en ligne sécurisés pour compléter votre achat. Assurez-vous que votre méthode de paiement en ligne est acceptée.
+                                                </li>
+                                                <li><strong>Virement bancaire </strong> : Pour certaines réservations, nous acceptons les virements bancaires. Veuillez contacter notre service client pour obtenir les instructions nécessaires.
+                                                </li>
+                                                <li><strong>Chèques-cadeaux ou bons</strong> : Si vous avez des chèques-cadeaux ou des bons de réduction, vous pouvez les utiliser lors du paiement en ligne en entrant les codes correspondants.
+                                                <li><strong>Autres méthodes </strong> : D'autres options de paiement peuvent être disponibles en fonction de votre région. Consultez notre site web ou contactez notre service client pour plus d'informations sur les méthodes de paiement spécifiques.
+                                                </li>
+                                             </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwoA">
+                                        <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwoA" aria-expanded="false"
+                                            aria-controls="collapseTwoA">
+                                            <span class="fs-1 text-gred">Q2.</span> <span class="ms-5">Quand dois-je payer ?</span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwoA" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwoA" data-bs-parent="#accordionExample3">
+                                        <div class="accordion-body">
+                                            <p class="mb-3 theme-text-accent-two font-medium lh-lg">
+                                            Le paiement de votre réservation doit être effectué au moment de la réservation pour garantir votre vol. Lors de la réservation en ligne ou par téléphone, vous serez invité à fournir vos informations de paiement et à confirmer votre achat. Le paiement complet est requis avant que votre réservation ne soit confirmée et votre billet émis.
+
+                                            <br>
+                                            <br>
+                                            Pour les réservations effectuées par des agences de voyage ou des partenaires, les conditions de paiement peuvent varier. Assurez-vous de vérifier les détails spécifiques lors de la réservation ou de contacter notre service client si vous avez des questions sur les modalités de paiement.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                            </div>
+                            <!-- return question -->
+                            <h3 class="mb-3 mt-5">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                                        <g id="return" transform="translate(0 -482)">
+                                            <path id="Path_26" data-name="Path 26"
+                                                d="M12.846,486.218l2.037,1.035V482H10.02v5.253l2.034-1.034A.877.877,0,0,1,12.846,486.218Z" />
+                                            <path id="Path_27" data-name="Path 27"
+                                                d="M24.9,492.619v-9.74a.878.878,0,0,0-.879-.879H16.641v6.683a.878.878,0,0,1-1.333.753l-2.857-1.452-2.916,1.482a.877.877,0,0,1-1.271-.783l0-6.683H.879a.878.878,0,0,0-.879.879v23.144a.878.878,0,0,0,.879.879h9.74A10.969,10.969,0,0,1,24.9,492.619Z" />
+                                            <path id="Path_28" data-name="Path 28"
+                                                d="M27.3,496.271a9.213,9.213,0,1,0,2.7,6.515A9.186,9.186,0,0,0,27.3,496.271Zm-2.81,9.4a3.389,3.389,0,0,1-2.4,1h-4.1a.879.879,0,1,1,0-1.758h4.1a1.67,1.67,0,0,0,0-3.34H19.641l.522.521a.876.876,0,1,1-1.235,1.243l-2.02-2.015a.877.877,0,0,1,0-1.24l2.015-2.019a.876.876,0,1,1,1.243,1.236l-.516.517H22.09a3.437,3.437,0,0,1,2.4,5.858Z" />
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span class="ms-3">Remboursement</span>
+                            </h3>
+                            <div class="accordion mb-4" id="accordionExample4">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOneD">
+                                        <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOneD" aria-expanded="true"
+                                            aria-controls="collapseOneD">
+                                            <span class="fs-1 text-gred">Q1.</span> <span class="ms-5">Comment puis-je demander un remboursement pour mon billet ?</span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOneD" class="accordion-collapse collapse"
+                                        aria-labelledby="headingOneD" data-bs-parent="#accordionExample4">
+                                        <div class="accordion-body">
+                                            <p class="mb-3 theme-text-accent-two font-medium lh-lg">
+                                            Pour demander un remboursement, connectez-vous à votre compte sur notre site web ou notre application mobile et accédez à la section « Mes réservations ». Sélectionnez la réservation que vous souhaitez annuler et suivez les instructions pour soumettre une demande de remboursement. Vous pouvez également contacter notre service client pour obtenir de l’aide dans le processus de remboursement.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwoD">
+                                        <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwoD" aria-expanded="false"
+                                            aria-controls="collapseTwoD">
+                                            <span class="fs-1 text-gred">Q2.</span> <span class="ms-5">Quels sont les critères pour être éligible à un remboursement ?</span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwoD" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwoD" data-bs-parent="#accordionExample3">
+                                        <div class="accordion-body">
+                                            <p class="mb-3 theme-text-accent-two font-medium lh-lg">
+                                            Les critères d’éligibilité pour un remboursement dépendent du type de billet que vous avez acheté et des conditions spécifiques associées. En général, les billets remboursables peuvent être annulés avec remboursement, tandis que les billets non remboursables peuvent ne pas permettre de remboursement, sauf dans des circonstances exceptionnelles. Veuillez consulter les conditions de votre billet ou contacter notre service client pour plus de détails.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThreeD">
+                                        <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseThreeD" aria-expanded="false"
+                                            aria-controls="collapseThreeD">
+                                            <span class="fs-1 text-gred">Q3.</span> <span class="ms-5"> Combien de temps faut-il pour recevoir un remboursement ?</span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThreeD" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThreeD" data-bs-parent="#accordionExample3">
+                                        <div class="accordion-body">
+                                            <p class="mb-3 theme-text-accent-two font-medium lh-lg">
+                                            Le traitement des remboursements peut prendre de 7 à 14 jours ouvrables à partir du moment où nous recevons votre demande complète. Les délais peuvent varier en fonction du mode de paiement utilisé et des procédures internes. Vous recevrez une confirmation par e-mail une fois le remboursement effectué.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFourD">
+                                        <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseFourD" aria-expanded="false"
+                                            aria-controls="collapseFourD">
+                                            <span class="fs-1 text-gred">Q4.</span> <span class="ms-5">Que faire si je n'ai pas reçu mon remboursement dans le délai prévu ?</span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFourD" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFourD" data-bs-parent="#accordionExample3">
+                                        <div class="accordion-body">
+                                            <p class="mb-3 theme-text-accent-two font-medium lh-lg">                                        
+                                            Si vous n'avez pas reçu votre remboursement dans le délai indiqué, veuillez vérifier votre compte bancaire ou votre carte de crédit pour confirmer que le remboursement n’a pas été crédité. Si le remboursement n’apparaît toujours pas, contactez notre service client avec les détails de votre réservation et votre preuve de demande de remboursement. Nous enquêterons sur la situation et vous fournirons une mise à jour.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- repetable -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+        <!-- page footer section -->
+        <footer class="footer" id="footerSec">
+            <div class="container-fluid" data-aos="fade-up">
+                <div class="row">
+                    <div class="col-12 col-lg-6 pt-5">
+                        <img src="assets/images/logoWhite.png" class="img-fluid" alt="Brand color white"
+                            title="Brand color white">
+                        <p class="text-justify pt-5">Unir les peuples africains </p>
+                        <p class="pt-lg-5">Obtenez les dernières offres, les prochaines promotions de vols et des tarifs avantageux</p>
+                        <form class="form">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control py-3 rounded-0" id="inputPassword2"
+                                            placeholder="info@flyroyalairways.com">
+                                        <button type="button"
+                                            class="btn btn-outline-light rounded-0 custom-btn-subscribe btn-effect">S'abonner</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="col-12 mt-5">
+                            <!-- <img src="assets/images/icons/tafi.svg" class="img-fluid me-4" alt="tafi" title="tafi">
+                            <img src="assets/images/icons/taai.svg" class="img-fluid" alt="taai" title="taai">
+                             -->
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 pt-5">
+                        <!-- <img src="assets/images/icons/iata.svg" class="img-fluid d-inline-flex" alt="IATA" title="IATA">
+                        <p class="fw-bold text-uppercase mb-0 ms-2 d-inline-flex">Nous sommes une compagnie aérienne certifiée IATA
+                        </p> -->
+                        <div class="row">
+                            <div class="col-md-4 mt-5">
+                                <p class="text-uppercase fw-bold mb-4">À propos de nous</p>
+                                <ul class="fl-menu">
+                                    <li class="nav-item"><a href="about.html">À propos de nous</a></li>
+                                    <li class="nav-item"><a href="contact.html">Contacter Nous</a></li>
+                                    <li class="nav-item"><a href="#">Détails bancaires</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 mt-5">
+                                <p class="text-uppercase fw-bold">Légal</p>
+                                <ul class="fl-menu">
+                                    <li class="nav-item"><a href="privacy.html">Confidentialité</a></li>
+                                    <li class="nav-item"><a href="#">Conditions Générales</a></li>
+                                    <li class="nav-item"><a href="#">Avertissement</a></li>
+                                    <li class="nav-item"><a href="#">Confidentialité et Cookies</a></li>
+                                    <li class="nav-item"><a href="#">Légal</a></li>
+                                    <li class="nav-item"><a href="#">Aide</a></li>
+                                    <li class="nav-item"><a href="#">Feedback</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 mt-5">
+                                <p class="text-uppercase fw-bold">Entreprise</p>
+                                <ul class="fl-menu">
+                                    <li class="nav-item"><a href="#">Devenez partenaire</a></li>
+                                    <li class="nav-item"><a href="#">Services</a></li>
+                                    <li class="nav-item"><a href="#">Carrières</a></li>
+                                    <li class="nav-item"><a href="faq.html">FAQ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-0 pt-5">
+                    <div class="col-12 border-top border-bottom">
+                        <div class="row">
+                            <div class="col-12 col-lg-4 text-start py-3">
+                                <p class="d-inline-flex text-uppercase mb-0">Suivez-nous</p>
+                                <div class="d-inline-flex social">
+                                    <a href="#" class="ps-3"><i class="bi bi-facebook"></i></a>
+                                    <a href="https://twitter.com/flyroyalairways" class="ps-3"><i class="bi bi-twitter"></i></a>
+                                    <a href="https://www.linkedin.com/company/royalairways" class="ps-3"><i class="bi bi-linkedin"></i></a>
+                                    <a href="https://www.instagram.com/flyroyalairways" class="ps-3"><i class="bi bi-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 text-lg-center social py-3">
+                                <p class="d-inline-flex text-uppercase mb-0">Centre de support :</p>
+                                <a href="#" class="botom-link">(+235) 64-00-00-61</a>
+                            </div>
+                            <div class="col-12 col-lg-4 text-lg-end social py-3">
+                                <a href="mailto:info@flyroyalairways.com" class="botom-link">info@flyroyalairways.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <p class="text-center py-5 mb-0 font-small">©2024 Royal Airways. Tous droits réservés.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <p id="back-top" class="back-to-top bg-dark" style="display: block;">
+                <a href="#top"><i class="bi bi-chevron-up"></i></a>
+            </p>
+        </footer>
+
+    </div>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--This page JavaScript -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!--Data Calendar js -->
+    <script src="assets/js/jquery-ui.js"></script>
+    <!--Traveler counter js -->
+    <script src="assets/js/counter.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- animation aos library -->
+    <script src="assets/js/aos.js"></script>
+</body>
+
+</html>
